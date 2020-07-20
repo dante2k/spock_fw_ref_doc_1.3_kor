@@ -369,29 +369,29 @@
         <p>단위 테스트를 배우기 위해서는, <a href="http://en.wikipedia.org/wiki/Unit_testing" class="bare">http://en.wikipedia.org/wiki/Unit_testing</a> 를 방문해 보세요.</p>
       </div>
       <div class="sect2">
-        <h3 id="_terminology"><a class="anchor" href="#_terminology"></a><a class="link" href="#_terminology">Terminology</a></h3>
+        <h3 id="_terminology"><a class="anchor" href="#_terminology"></a><a class="link" href="#_terminology">Terminology(설명)</a></h3>
         <div class="paragraph">
           <p>몇가지 정의부터 시작해 보겠습니다: Spock 을 사용하면 관심 시스템이 나타내는 예상 <em>기능</em>(속성, aspects)을 설명하는 <a href="https://en.wikipedia.org/wiki/Specification_by_example"><em>명세</em></a>를 작성할 수 있습니다.
-            The system of interest could be anything between a single class and a whole application, and is also called the <em>system under specification or SUS</em>.
-            The description of a feature starts from a specific snapshot of the SUS and its collaborators; this snapshot is called the feature&#8217;s <em>fixture</em>.</p>
+            관심 시스템은 단일 클래스와 전체 응용 프로그램 사이에 있을 수 있고, 이는 <em>명세에 따른 시스템 또는 SUS</em> 라고 부릅니다.
+            기능에 대한 설명은 SUS 및 해당 공동 작업자의 특정 스냅샷에서 시작합니다; 이 스냅샷을 기능의 비품(<em>fixture</em>)이라고 합니다.</p>
         </div>
         <div class="paragraph">
           <p>다음 섹션에서는 Spock 명세를 구성 할 수 있는 모든 블록을 안내합니다. 일반적인 명세는 그 중 일부만 사용합니다.</p>
         </div>
       </div>
       <div class="sect2">
-        <h3 id="_imports"><a class="anchor" href="#_imports"></a><a class="link" href="#_imports">Imports</a></h3>
+        <h3 id="_imports"><a class="anchor" href="#_imports"></a><a class="link" href="#_imports">Imports(추가)</a></h3>
         <div class="listingblock">
           <div class="content">
             <pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">import</span> <span class="include">spock.lang.*</span></code></pre>
           </div>
         </div>
         <div class="paragraph">
-          <p>Package <code>spock.lang</code> contains the most important types for writing specifications.</p>
+          <p><code>spock.lang</code> 패키지는 명세를 작성하는 중요한 타입이 대부분 포함되어 있습니다.</p>
         </div>
       </div>
       <div class="sect2">
-        <h3 id="_specification"><a class="anchor" href="#_specification"></a><a class="link" href="#_specification">Specification</a></h3>
+        <h3 id="_specification"><a class="anchor" href="#_specification"></a><a class="link" href="#_specification">Specification(명세)</a></h3>
         <div class="listingblock">
           <div class="content">
 <pre class="CodeRay highlight"><code data-lang="groovy"><span class="type">class</span> <span class="class">MyFirstSpecification</span> <span class="directive">extends</span> Specification {
