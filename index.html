@@ -25,7 +25,7 @@
       <li><a href="#_getting_started">시작하기</a>
         <ul class="sectlevel2">
           <li><a href="#_spock_web_console">Spock Web Console</a></li>
-          <li><a href="#_spock_example_project">Spock Example Project</a></li>
+          <li><a href="#_spock_example_project">Spock 예제 프로젝트</a></li>
         </ul>
       </li>
       <li><a href="#_spock_primer">Spock Primer</a>
@@ -338,12 +338,13 @@
         </div>
       </div>
       <div class="sect2">
-        <h3 id="_spock_example_project"><a class="anchor" href="#_spock_example_project"></a><a class="link" href="#_spock_example_project">Spock Example Project</a></h3>
+        <h3 id="_spock_example_project"><a class="anchor" href="#_spock_example_project"></a><a class="link" href="#_spock_example_project">Spock 예제 프로젝트</a></h3>
         <div class="paragraph">
-          <p>To try Spock in your local environment, clone or download/unzip the
-            <a href="https://github.com/spockframework/spock-example">Spock Example Project</a>. It comes with fully working Ant, Gradle, and
-            Maven builds that require no further setup. The Gradle build even bootstraps Gradle itself and gets you up and
-            running in Eclipse or IDEA with a single command. See the README for detailed instructions.</p>
+          <p>당신의 로컬 환경에서 Spock 을 사용해보고 싶다면,
+            <a href="https://github.com/spockframework/spock-example">Spock Example Project</a> git clone 하거나 다운로드/압축해제 하세요.
+            이것은 별도의 설정없이 Ant, Gradle 그리고 Maven 빌드를 지원합니다.
+            Gradle 빌드는 Gradle 자체를 부트 스트랩하고 단일 명령으로 Eclipse 또는 IDEA에서 시작하고 실행할 수 있습니다.
+            자세한 명령어는 README 파일을 확인하세요.</p>
         </div>
       </div>
     </div>
@@ -352,32 +353,30 @@
     <h2 id="_spock_primer"><a class="anchor" href="#_spock_primer"></a><a class="link" href="#_spock_primer">Spock Primer</a></h2>
     <div class="sectionbody">
       <div class="paragraph">
-        <p>This chapter assumes that you have a basic knowledge of Groovy and unit testing. If you are a Java developer but haven&#8217;t
-          heard about Groovy, don&#8217;t worry - Groovy will feel very familiar to you! In fact, one of Groovy&#8217;s main design goals is to
-          be <em>the</em> scripting language alongside Java. So just follow along and consult the
-          <a href="http://groovy-lang.org/documentation.html">Groovy documentation</a> whenever you feel like it.</p>
+        <p>이 장에서는 Groovy 및 단위 테스트에 대한 기본 지식이 있다고 가정합니다.
+          Java 개발자이지만 Groovy에 대해 들어 보지 못한 경우 걱정하지 마십시오.
+          Groovy는 매우 친숙하게 느낄 것입니다!
+          실제로 Groovy의 주요 디자인 목표 중 하나는 Java와 함께 스크립팅 언어가 되는 것입니다.
+          따라서 필요할 때 <a href="http://groovy-lang.org/documentation.html">Groovy 설명서</a> 를 참조하십시오.</p>
       </div>
       <div class="paragraph">
-        <p>The goals of this chapter are to teach you enough Spock to write real-world Spock specifications, and to
-          whet your appetite for more.</p>
+        <p>이 장의 목표는 실제 Spock 명세를 작성하고, 더 많은 호기심을 자극하도록 Spock 을 가르치는 것입니다.</p>
       </div>
       <div class="paragraph">
-        <p>To learn more about Groovy, go to <a href="http://groovy-lang.org/" class="bare">http://groovy-lang.org/</a>.</p>
+        <p>Groovy 를 배우기 위해서는, <a href="http://groovy-lang.org/" class="bare">http://groovy-lang.org/</a>.</p>
       </div>
       <div class="paragraph">
-        <p>To learn more about unit testing, go to <a href="http://en.wikipedia.org/wiki/Unit_testing" class="bare">http://en.wikipedia.org/wiki/Unit_testing</a>.</p>
+        <p>단위 테스트를 배우기 위해서는, <a href="http://en.wikipedia.org/wiki/Unit_testing" class="bare">http://en.wikipedia.org/wiki/Unit_testing</a> 를 방문해 보세요.</p>
       </div>
       <div class="sect2">
         <h3 id="_terminology"><a class="anchor" href="#_terminology"></a><a class="link" href="#_terminology">Terminology</a></h3>
         <div class="paragraph">
-          <p>Let&#8217;s start with a few definitions: Spock lets you write <a href="https://en.wikipedia.org/wiki/Specification_by_example"><em>specifications</em></a>
-            that describe expected <em>features</em> (properties, aspects) exhibited by a system of interest. The system of interest could be
-            anything between a single class and a whole application, and is also called the <em>system under specification or SUS</em>.
+          <p>몇가지 정의부터 시작해 보겠습니다: Spock 을 사용하면 관심 시스템이 나타내는 예상 <em>기능</em>(속성, aspects)을 설명하는 <a href="https://en.wikipedia.org/wiki/Specification_by_example"><em>명세</em></a>를 작성할 수 있습니다.
+            The system of interest could be anything between a single class and a whole application, and is also called the <em>system under specification or SUS</em>.
             The description of a feature starts from a specific snapshot of the SUS and its collaborators; this snapshot is called the feature&#8217;s <em>fixture</em>.</p>
         </div>
         <div class="paragraph">
-          <p>The following sections walk you through all building blocks of which a Spock specification may be composed. A typical
-            specification uses only a subset of them.</p>
+          <p>다음 섹션에서는 Spock 명세를 구성 할 수 있는 모든 블록을 안내합니다. 일반적인 명세는 그 중 일부만 사용합니다.</p>
         </div>
       </div>
       <div class="sect2">
